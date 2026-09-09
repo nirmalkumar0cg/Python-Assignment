@@ -1,8 +1,8 @@
-# user_day = int(input("Enter The Date"))
-# user_month = int(input("Enter The Month"))
-# user_year = int(input("Enter The Year"))
-# date = f"{user_day}/{user_month}/{user_year}"
-# if user_month % 2 == 0 and user_month <= 31:
-#     print("Valid")
-# else:
-#     print("Invalid")
+# user_day,user_month,user_year = map(int,input("Enter Day Month Year(DD/MM/YYYY):"))
+# if user_month == 1 or 3 or 5 or 7 or 8 or 10 or 12:
+#     if user_day <= 31:
+#      print(f"{user_day}/{user_month}/{user_year} Valid")
+#     elif user_year % 400 == 0 and user_year %4 ==0 and user_year % 100!=0:
+       
+
+

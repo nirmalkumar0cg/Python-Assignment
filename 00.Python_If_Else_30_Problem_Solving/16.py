@@ -1,5 +1,4 @@
 units = int(input("Enter the total units consumed: "))
-total_bill = 0
 if units <= 100:
     total_bill = units * 5
 elif units <= 200:

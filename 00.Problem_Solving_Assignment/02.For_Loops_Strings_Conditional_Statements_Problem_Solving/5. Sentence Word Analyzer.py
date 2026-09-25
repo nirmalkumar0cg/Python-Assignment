@@ -1,3 +1,19 @@
+# Take a sentence and examine every word.
+
+# For each word:
+
+# Print its length.
+# Print "Short" if length ≤ 3.
+# Print "Medium" if length is 4–6.
+# Print "Long" if length > 6.
+# At the end, print the number of short, medium, and long words.
+
+
+
+
+
+
+
 user_sentence = input("Enter Your Sentence: ").split()
 
 short_count = 0

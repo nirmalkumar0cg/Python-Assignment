@@ -240,4 +240,76 @@
 #             print(col+6,end=' ')
 #     print()
 
-    
+# 18. Print 1 to 20 in 4 Rows
+# Write a Python program to print numbers from 1 to 20 in 4 rows, with 5 numbers in each row.
+
+# Expected output:
+
+# 1 2 3 4 5
+# 6 7 8 9 10
+# 11 12 13 14 15
+# 16 17 18 19 20
+
+
+
+# 19. Print Coordinate Pairs
+# Write a Python program to print:
+
+# (1,1) (1,2) (1,3)
+# (2,1) (2,2) (2,3)
+# (3,1) (3,2) (3,3)    
+
+
+# 20. Print All Number Combinations
+# For numbers from 1 to 3, print every possible pair:
+
+# 1 1
+# 1 2
+# 1 3
+# 2 1
+# 2 2
+# 2 3
+# 3 1
+# 3 2
+# 3 3
+
+# 21. 10×10 Multiplication Grid
+# Write a Python program to print a multiplication grid from 1 to 10.
+
+# 22. Repeated Number Pattern
+# Write a Python program to print:
+
+# 1
+# 22
+# 333
+# 4444
+# 55555
+
+
+# 23. Decreasing Number Pattern
+# Write a Python program to print:
+
+# 12345
+# 1234
+# 123
+# 12
+# 1
+
+# 24. Reverse Number Pattern
+# Write a Python program to print:
+
+# 54321
+# 5432
+# 543
+# 54
+# 5
+
+
+# 25. Repeated Row Number Pattern
+# Write a Python program to print:
+
+# 11111
+# 22222
+# 33333
+# 44444
+# 55555

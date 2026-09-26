@@ -249,16 +249,24 @@
 # 6 7 8 9 10
 # 11 12 13 14 15
 # 16 17 18 19 20
-
-
-
+# x=1
+# for row in range(4):
+#     for col in range(5):
+#         print(x,end=' ')
+#         x+=1
+#     print()
+    
 # 19. Print Coordinate Pairs
 # Write a Python program to print:
 
 # (1,1) (1,2) (1,3)
 # (2,1) (2,2) (2,3)
-# (3,1) (3,2) (3,3)    
+# (3,1) (3,2) (3,3)
 
+# for row in range(1,4):
+#     for col in range(1,4):
+#         print((row,col),end=' ')
+#     print()
 
 # 20. Print All Number Combinations
 # For numbers from 1 to 3, print every possible pair:
@@ -273,8 +281,18 @@
 # 3 2
 # 3 3
 
+# for row in range(1,4):
+#     for col in range(1,4):
+#         print(row,col)
+# print()
+
 # 21. 10×10 Multiplication Grid
 # Write a Python program to print a multiplication grid from 1 to 10.
+
+# for row in range(1,11):
+#     for col in range(1,11):
+#         print(row,"x",col,"=", row*col)
+#     print()
 
 # 22. Repeated Number Pattern
 # Write a Python program to print:
@@ -285,6 +303,10 @@
 # 4444
 # 55555
 
+# for row in range(1,7):
+#     for col in range(1,row):
+#         print(row-1,end='')
+#     print()
 
 # 23. Decreasing Number Pattern
 # Write a Python program to print:
@@ -294,6 +316,19 @@
 # 123
 # 12
 # 1
+
+# for row in range(1,6):
+#     for col in range(1,6):
+        
+        
+
+
+
+
+
+
+
+
 
 # 24. Reverse Number Pattern
 # Write a Python program to print:

@@ -112,6 +112,25 @@
 #   -1 5 6       No numbers printed
 #   2 4 6        2 4 6
 
+# storage = ""
+# found_negative = False
+
+# while True:
+#     num = input('Enter a number (or type "no" to stop): ')
+#     if num == 'no':
+#         break
+#     if int(num) < 0:
+#         found_negative = True
+#         continue  
+#     if not found_negative:
+#         if storage == "":
+#             storage = num
+#         else:
+#             storage += " " + num
+# if storage == "":
+#     print("No numbers printed")
+# else:
+#     print(storage)
 
 
 #
@@ -259,6 +278,15 @@
 #   mississippi   s         miippi
 #   banana        a         bnn
 #   hello         x         hello
+
+# user_string = input('Enter The String: ')
+# target = input('Enter The Character You Want To Remove From The String: ')
+# storage = ''
+# for i in user_string:
+#     if i != target:
+#         storage+=i
+# print(storage)
+
 #
 # Q14. Print Only Passing Marks
 #
@@ -272,13 +300,24 @@
 #   25 40 75 32 90   40 75 90
 #   10 20 30         No marks printed
 #   40 40 40         40 40 40
+# marks = list(map(int, input('Enter The Marks: ').split()))
+# check = []
+
+# for i in marks:
+#     if i < 40:
+#         continue
+#     check.append(i)
+    
+# print(check)
+
+
 #
 # B3. Think Carefully --- Challenging
 #
 # Q15. continue Does Not Skip the Whole Loop
 #
 # Predict the output.
-#
+# 
 # for i in range(1, 5):
 #     if i == 2:
 #         continue
@@ -286,6 +325,9 @@
 #     print("B", i)
 #
 # Which lines are skipped when i == 2?
+
+# A 1 B 1 A 3 B 3 A 4 B 4
+
 #
 # Q16. Fix the Infinite Loop
 #
@@ -293,11 +335,11 @@
 # and prints 1, 2, 4, and 5.
 #
 # n = 0
-#
+
 # while n < 5:
 #     if n == 3:
 #         continue
-#     n += 1
+#     n+=1
 #     print(n)
 #
 # Expected output after correction
@@ -306,6 +348,18 @@
 # 2
 # 4
 # 5
+
+#Corrected Program-
+# n = 0
+
+# while n < 5:
+#     n+=1
+#     if n == 3:
+#         continue
+#     print(n)
+
+
+
 #
 # Q17. Count Non-Vowel Characters
 #
@@ -323,6 +377,17 @@
 # For this question, treat a, e, i, o, and u as vowels.
 #
 # ------------------------------------------------------------------------
+
+# user_word = input('Enter A Word: ')
+# count=0
+# for i in user_word:
+#     if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+#         continue
+#     count+=1                                            
+# print(count)
+
+
+
 #
 # Section C --- Practice Problems on for-else
 #
@@ -339,6 +404,9 @@
 #     print(i)
 # else:
 #     print("Done")
+
+#Output-1 2 3 Done
+
 #
 # Q19. Completion After continue
 #
@@ -350,6 +418,9 @@
 #     print(i)
 # else:
 #     print("Completed")
+
+#Output- 1 3 4 Completed
+
 #
 # Q20. Completion After break
 #
@@ -362,15 +433,21 @@
 # else:
 #     print("Completed")
 # print("Outside loop")
+
+# 1 2 Outside loop
+
 #
 # Q21. Empty Iterable
 #
 # Predict the output.
-#
+
 # for item in []:
 #     print("Inside")
 # else:
 #     print("Else block")
+
+# Output - Else block
+
 #
 # C2. Write a Program --- Medium
 #
@@ -386,6 +463,9 @@
 #   4 8 12 16       12 Found
 #   3 6 9            5 Not found
 #   7 7 7            7 Found
+
+
+
 #
 # Q23. Check Whether a Character Exists
 #

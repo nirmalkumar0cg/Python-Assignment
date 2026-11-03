@@ -360,18 +360,18 @@
 # Repeat only the prompt for the field that has an invalid value.
 # Calculate and display the total cost after both values are valid.
 
-quantity = int(input('Enter product quantity: '))
-while quantity <= 0:
-    print('Quantity must be a positive integer.')
-    quantity = int(input('Enter product quantity: '))
+# quantity = int(input('Enter product quantity: '))
+# while quantity <= 0:
+#     print('Quantity must be a positive integer.')
+#     quantity = int(input('Enter product quantity: '))
 
-unit_price = float(input('Enter unit price: '))
-while unit_price <= 0:
-    print('Unit price must be greater than zero.')
-    unit_price = float(input('Enter unit price: '))
+# unit_price = float(input('Enter unit price: '))
+# while unit_price <= 0:
+#     print('Unit price must be greater than zero.')
+#     unit_price = float(input('Enter unit price: '))
 
-total_cost = quantity * unit_price
-print(f'Total cost: ₹{total_cost:.2f}')
+# total_cost = quantity * unit_price
+# print(f'Total cost: ₹{total_cost:.2f}')
 
 
 # Problem 20: Safe Average Calculator
@@ -382,18 +382,18 @@ print(f'Total cost: ₹{total_cost:.2f}')
 # If a value is outside any range specified by your instructor, ask for that value again.
 # Display the average after all required values have been entered.
 
-count = int(input('How many numbers do you want to enter? (1-20): '))
-while count < 1 or count > 20:
-    print('Count must be between 1 and 20.')
-    count = int(input('How many numbers do you want to enter? (1-20): '))
+# count = int(input('How many numbers do you want to enter? (1-20): '))
+# while count < 1 or count > 20:
+#     print('Count must be between 1 and 20.')
+#     count = int(input('How many numbers do you want to enter? (1-20): '))
 
-numbers = []
-for i in range(count):
-    value = float(input(f'Enter number {i + 1}: '))
-    numbers.append(value)
+# numbers = []
+# for i in range(count):
+#     value = float(input(f'Enter number {i + 1}: '))
+#     numbers.append(value)
 
-average = sum(numbers) / count
-print(f'Average: {average}')
+# average = sum(numbers) / count
+# print(f'Average: {average}')
 
 
 # Problem 22: Input Validation Without break
@@ -401,34 +401,34 @@ print(f'Average: {average}')
 # Keep asking for an integer from 1 to 10 until a valid value is entered.
 # Requirement: Use a suitable loop condition and update the condition so the loop ends when valid input is received.
 
-valid_number = False
-while not valid_number:
-    user_number = int(input('Enter an integer from 1 to 10: '))
-    valid_number = 1 <= user_number <= 10
-    if not valid_number:
-        print('Invalid input. Please enter a value from 1 to 10.')
+# valid_number = False
+# while not valid_number:
+#     user_number = int(input('Enter an integer from 1 to 10: '))
+#     valid_number = 1 <= user_number <= 10
+#     if not valid_number:
+#         print('Invalid input. Please enter a value from 1 to 10.')
 
-print(f'Valid number entered: {user_number}')
+# print(f'Valid number entered: {user_number}')
 
 
 # Problem 23: Three Valid Scores
 # Ask the user to enter three scores, each between 0 and 100, inclusive. Validate each score separately and repeat only the invalid score prompt. After all three scores are valid, display the total and average.
 
-scores = []
-for i in range(3):
-    score = int(input(f'Enter score {i + 1} (0-100): '))
-    while score < 0 or score > 100:
-        print('Score must be between 0 and 100.')
-        score = int(input(f'Enter score {i + 1} (0-100): '))
-    scores.append(score)
+# scores = []
+# for i in range(3):
+#     score = int(input(f'Enter score {i + 1} (0-100): '))
+#     while score < 0 or score > 100:
+#         print('Score must be between 0 and 100.')
+#         score = int(input(f'Enter score {i + 1} (0-100): '))
+#     scores.append(score)
 
-total_score = sum(scores)
-average_score = total_score / 3
-print(f'Total score: {total_score}')
-print(f'Average score: {average_score}')
+# total_score = sum(scores)
+# average_score = total_score / 3
+# print(f'Total score: {total_score}')
+# print(f'Average score: {average_score}')
 
 
-# Problem 24: ATM Withdrawal With Denomination Rules
+# Problem 24: ATM Withdrawal With Denomination Rules                         
 # Start with a balance of ₹10,000. Ask the user for a withdrawal amount.
 
 # Requirements:
@@ -439,24 +439,24 @@ print(f'Average score: {average_score}')
 # Deduct the amount only after all validation rules pass.
 # Display the withdrawn amount and remaining balance.
 
-balance = 10000
-valid_withdrawal = False
+# balance = 10000
+# valid_withdrawal = False
 
-while not valid_withdrawal:
-    withdrawal_amount = int(input('Enter the withdrawal amount: '))
+# while not valid_withdrawal:
+#     withdrawal_amount = int(input('Enter the withdrawal amount: '))
 
-    if withdrawal_amount <= 0:
-        print('Amount must be positive.')
-    elif withdrawal_amount > balance:
-        print('Amount must not exceed the balance.')
-    elif withdrawal_amount % 100 != 0:
-        print('Amount must be a multiple of ₹100.')
-    else:
-        valid_withdrawal = True
+#     if withdrawal_amount <= 0:
+#         print('Amount must be positive.')
+#     elif withdrawal_amount > balance:
+#         print('Amount must not exceed the balance.')
+#     elif withdrawal_amount % 100 != 0:
+#         print('Amount must be a multiple of ₹100.')
+#     else:
+#         valid_withdrawal = True
 
-balance -= withdrawal_amount
-print(f'Withdrawn amount: ₹{withdrawal_amount}')
-print(f'Remaining balance: ₹{balance}')
+# balance -= withdrawal_amount
+# print(f'Withdrawn amount: ₹{withdrawal_amount}')
+# print(f'Remaining balance: ₹{balance}')
 
 # Problem 21: Stronger Password Rules
 # Keep asking for a password until all conditions are met:
@@ -467,3 +467,136 @@ print(f'Remaining balance: ₹{balance}')
 # At least one digit.
 # No whitespace characters.
 # Display which rules are not satisfied after each invalid attempt.
+
+
+    # if not any(char.islower() for char in user_pass):
+    #     failed_rules.append('At least one lowercase letter')
+    
+    
+while True:
+    user_pass = input('Enter The Password: ')
+    failed_rules = [ ]
+    
+    if len <= 7:
+        failed_rules.append('Length Should Be Greater Than 8')
+        print('Length Should Be Should Be Greatr Than 8')
+    if not any(char.isupper() for char in user_pass):
+        failed_rules.append('')
+        
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# while True:
+#     user_pass = input('Enter The Password You Want To Set: ')
+#     while len(user_pass) <= 7:
+#         print('The Length Should Be Greater Than or Equal To 8...')
+#         user_pass = input('Enter The Password You Want To Set: ')
+#     while True:
+#         for i in user_pass:
+#             if i not in 'ABCEFGHIJKLMNOPQRSTUVWXYZ':
+#                 print('Your Password Must Contain One Uppercase Letter...')
+#                 user_pass = input('Enter The Password You Want To Set: ')  
+#             else:
+#                 while True:
+#                     if i not in 'abcdefghijklmnopqrstuvwxyz':
+#                         print('Your Password Must Contain One lowercase letter...')
+#                         user_pass = input('Enter The Password You Want To Set: ')
+#                     else:
+#                         while True:
+#                             if i not in '1234567890':
+#                                 print('Your Password Must Contain One digit...')
+#                                 user_pass = input('Enter The Password You Want To Set: ')
+#                             else:
+#                                 while True:
+#                                     if i == ' ':
+#                                         print('Your Password Has WhiteSpaces In between enter again...')
+#                                         user_pass = input('Enter The Password You Want To Set: ')
+#                                     else:
+#                                         break
+#         print(user_pass)
+                                
+            
+                        
+                
+                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+string = 'nirmal'
+for i in string:
+    if i in 'aeiou':
+        print('has vowels')
+        break
+        
+        
+            
+            
+        
+        

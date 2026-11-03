@@ -379,9 +379,53 @@
 #         case _:
 #             print("Enter a valid operation")
 #     print()
-        
-        
-        
-        
 
-    
+
+
+# def cal(a,b):
+#     def sub(a,b):
+#         return a-b
+#     def div(a,b):
+#         return a/b
+#     def fdiv(a,b):
+#         return a/b
+#     def add(a,b):
+#         return a+b
+#     return sub(a,b),div(a,b),fdiv(a,b),add(a,b)
+
+
+# print(cal(25,3))
+
+
+# def cal(a,b):
+#     def sub(a,b):
+#         print(a-b)
+#         def div(a,b):
+#             print(a/b)
+#             def fdiv(a,b):
+#                 print(a//b)
+#                 def add(a,b):
+#                     print(a+b)
+#                 return add(a,b)
+#             return fdiv(a,b)
+#         return div(a,b)    
+#     return sub(a,b)        
+# cal(25,3)        
+
+
+# def counter_fun(count):
+#     count = count + 1
+#     if(count==5):
+#         return count
+#     return counter_fun(count)
+# print(counter_fun(0))
+
+
+# Fact- 4!=1x2x3x4 = 24
+# Fact = 1
+# num = 3
+# i = 1 2 3 4
+# i= 1*2*3*4
+
+
+

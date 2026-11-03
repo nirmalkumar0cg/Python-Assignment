@@ -368,7 +368,8 @@
 
 # 30. Write a program that defines one function, prints a message outside it, calls the function, and prints another message after the call.
 
-def msg():
-    print('hello')
-    
-print('bye')
+# def msg():
+#     print('hello')
+# msg()
+# print('bye')
+# print('ttt')

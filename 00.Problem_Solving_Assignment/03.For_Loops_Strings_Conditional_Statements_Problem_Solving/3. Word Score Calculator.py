@@ -9,7 +9,7 @@
 # Calculate the score of every word and print the word with the highest score.
 
 # Do not use max().
-user_sentence = input("Enter Your Sentence")
+user_sentence = input("Enter Your Sentence: ")
 words = user_sentence.split()
 highest_score = 0
 highest_word = ''

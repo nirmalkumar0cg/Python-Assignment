@@ -317,8 +317,47 @@
 # 12
 # 1
 
-# for row in range(1,6):
-#     for col in range(1,6):
+# for i in range(5,0,-1):
+#     for j in range(1,i+1):
+#         print(j,end='')
+#     print()
+
+# 24. Reverse Number Pattern
+# Write a Python program to print:
+
+# 54321
+# 5432
+# 543
+# 54
+# 5
+# Hint
+# Outer loop controls how many numbers are printed.
+# Inner loop should print numbers in decreasing order.
+# Start with 5 and reduce the ending value after every row.
+
+# for i in range(0,5):
+#     for j in range(5,i,-1):
+#         print(j,end='')
+#     print()
+
+# 25. Repeated Row Number Pattern
+# Write a Python program to print:
+
+# 11111
+# 22222
+# 33333
+# 44444
+# 55555
+# Hint
+# Outer loop decides which number is printed.
+# Inner loop prints the same number 5 times.
+# Move to the next number after completing each row.
+
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(i,end='')
+#     print()
+       
         
         
 

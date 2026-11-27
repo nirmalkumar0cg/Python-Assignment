@@ -260,6 +260,9 @@
 
 # Also state the values returned by mystery(0), mystery(1), and mystery(2).
 
+# 
+
+
 
 # Section D — Edge Cases and Debugging (10 marks)
 # 16. Fix the factorial (3 marks)

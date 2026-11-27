@@ -57,14 +57,6 @@
 # Input: level
 # Output: True
 
-# def is_palindrome(s, start=0, end=None):
-#     if end is None:
-#         end = len(s) - 1
-#     if start >= end:
-#         return True
-#     if s[start] != s[end]:
-#         return False
-#     return is_palindrome(s, start + 1, end - 1)
 
 # print(is_palindrome('level'))
 
@@ -75,14 +67,6 @@
 # Input: programming, m
 # Output: 2
 
-# def count_char(s, ch, i=0):
-#     if i == len(s):
-#         return 0
-#     if s[i] == ch:
-#         return 1 + count_char(s, ch, i + 1)
-#     return count_char(s, ch, i + 1)
-
-# print(count_char('programming', 'm'))
 
 # 5. Find the Greatest Common Divisor
 # Write a recursive function that accepts two positive integers and returns their greatest common divisor (GCD). Do not use built-in GCD functions.
@@ -107,14 +91,7 @@
 # Input: 29
 # Output: True
 
-# def is_prime(n, divisor=2):
-#     if divisor * divisor > n:
-#         return True
-#     if n % divisor == 0:
-#         return False
-#     return is_prime(n, divisor + 1)
 
-# print(is_prime(29))
 
 # 7. Remove All Occurrences of a Character
 # Write a recursive function that accepts a string and a character. Return a new string with every occurrence of that character removed. Do not use the built-in replace() method.
@@ -123,14 +100,7 @@
 # Input: mississippi, s
 # Output: miippi
 
-# def remove_char(s, ch, i=0):
-#     if i == len(s):
-#         return ''
-#     if s[i] == ch:
-#         return remove_char(s, ch, i + 1)
-#     return s[i] + remove_char(s, ch, i + 1)
 
-# print(remove_char('mississippi', 's'))
 
 # 8. Convert a Decimal Number to Binary
 # Write a recursive function that accepts a non-negative decimal integer and returns its binary representation as a string. Do not use bin().
@@ -154,14 +124,7 @@
 # Input: 50291
 # Output: True
 
-# def only_digits(s, i=0):
-#     if i == len(s):
-#         return True
-#     if s[i] not in '0123456789':
-#         return False
-#     return only_digits(s, i + 1)
 
-# print(only_digits('50291'))
 
 
 # 10. Find the Digital Root
@@ -172,13 +135,3 @@
 # Output: 2
 # (First: 9 + 8 + 7 + 5 = 29; then: 2 + 9 = 11; then: 1 + 1 = 2.)
     
-# def digital_root(n, total=0):
-#     if n == 0:
-#         if total < 10:
-#             return total
-#         return digital_root(total, 0)
-#     last_digit = n % 10
-#     total = total + last_digit
-#     return digital_root(n // 10, total)
-
-# print(digital_root(9875))

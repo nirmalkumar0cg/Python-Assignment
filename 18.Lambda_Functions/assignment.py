@@ -1,50 +1,106 @@
-# def square(n):
-#     return n*n
+# Questions
+# 1. Add Two Numbers
+# Create a lambda function that accepts two numbers and returns their sum.
 
-# print(square(5))
+# Sample values: 10, 20
+# Expected output: 30
 
-# square = lambda n:n*n
-# print(square(5))
+# sum = lambda x,y : x+y
 
-# multiply = lambda n,y:n*y
-# print(multiply(5,6))
+# print(sum(10,20))
 
-# cube = lambda n:n**3
+# 2. Find the Square
+# Create a lambda function that accepts one number and returns its square.
+
+# Sample value: 6
+# Expected output: 36
+
+# square = lambda x : x**2
+# print(square(2))
+    
+# 3. Find the Cube
+# Create a lambda function that accepts one number and returns its cube.
+
+# Sample value: 3
+# Expected output: 27
+
+# cube = lambda x : x**3
 # print(cube(2))
 
-# checker = lambda n: 'Even' if n % 2 == 0 else 'Odd'
-# print(checker(2))
+# 4. Check Even or Odd
+# Create a lambda function that accepts a number and returns "Even" if the number is even, otherwise returns "Odd".
 
-# find_smallest = lambda n,y: y if y<n else n
-# print(find_smallest(2,5))
+# Sample value: 7
+# Expected output: "Odd"
 
-# area_of_rectangle = lambda l,b : f"Area of rectangle=>{l*b}"
-# print(area_of_rectangle(5,6)) 
+# parity = lambda x : 'Even' if x % 2 == 0 else 'Odd'
 
-# small_convert = lambda n: n.lower()
-# print(small_convert('HELLO'))
+# print(parity(3))
 
-# is_vowel = lambda n: 'Is Vowel' if n in 'aeiouAEIOU' else 'Is Not Vowel'
-# print(is_vowel('z'))
+# 5. Find the Greater Number
+# Create a lambda function that accepts two numbers and returns the greater number.
 
-# word = 'coding'
-# upper_convert = lambda word:word.upper()
-# print(upper_convert(word))
+# Sample values: 45, 32
+# Expected output: 45
 
-# word = 'coding'
-# upper_convert = map(lambda c:c.upper(),word)
-# print(''.join(upper_convert))
+# greater_num = lambda x,y : x if x>y else y
 
-# word = 'programming'
+# print(greater_num(99,5))
 
-# vowel_extract = filter(lambda j: j in 'aeiouAEIOU',word)
+# 6. Convert Celsius to Fahrenheit
+# Create a lambda function that accepts a temperature in Celsius and converts it to Fahrenheit.
 
-# print(''.join(vowel_extract))
+# Use this formula:
 
-def lab3(n):
-    if n == 0:
-        return
-    lab3(n-1)
-    print(n)
+# Fahrenheit = (Celsius * 9/5) + 32
 
-lab3(5)
+# Sample value: 25
+# Expected output: 77.0
+
+# c_to_f= lambda x: (x*9/5)+32
+
+# print(c_to_f(25))
+
+# 7. Calculate the Length of a String
+# Create a lambda function that accepts a string and returns the number of characters in it.
+
+# Sample value: "Python"
+# Expected output: 6
+
+# len_of_string = lambda x : len(x)
+
+# print(len_of_string('Python'))
+
+# 8. Convert a String to Uppercase
+# Create a lambda function that accepts a string and returns the string in uppercase.
+
+# Sample value: "hello world"
+# Expected output: "HELLO WORLD"
+
+# convert_up = lambda x : x.upper()
+
+# print(convert_up('hello world'))
+
+# 9. Find the Last Character
+# Create a lambda function that accepts a non-empty string and returns its last character.
+
+# Sample value: "Coding"
+# Expected output: "g"
+
+# last_ch = lambda x : x[-1]
+
+# print(last_ch('Coding'))
+
+# 10. Calculate the Final Price
+# Create a lambda function that accepts the original price and discount percentage. Return the final price after applying the discount.
+
+# Formula:
+
+# Final Price = Original Price - (Original Price * Discount / 100)
+
+# Sample values: Original price = 1000, Discount = 10
+# Expected output: 900.0
+
+# final_price = lambda x,y: x-(x*y/100)
+
+# print(final_price(1000,10))
